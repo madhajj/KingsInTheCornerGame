@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="691.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sep.kitc.controller.GameRoomController">
+   <children>
+      <AnchorPane layoutX="934.0" layoutY="14.0" prefHeight="575.0" prefWidth="261.0">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="538.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="25.0" prefWidth="240.0" text="Zurück">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <VBox fx:id="chatVBox" layoutX="14.0" layoutY="23.0" prefHeight="438.0" prefWidth="240.0" style="-fx-border-color: BLACK;" />
+            <Button fx:id="sendButton" layoutX="14.0" layoutY="501.0" mnemonicParsing="false" onAction="#sendButtonOnAction" prefHeight="25.0" prefWidth="240.0" text="Senden">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="chatTextField" layoutX="15.0" layoutY="468.0" prefHeight="25.0" prefWidth="240.0" promptText="Chatnachricht " />
+            <Label layoutX="14.0" text="Chat:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="14.0" pickOnBounds="false" prefHeight="512.0" prefWidth="635.0" style="-fx-border-color: BLACK;">
+         <children>
+            <ImageView fx:id="northStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="271.0" layoutY="54.0" onMousePressed="#selectNorthStall" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="southStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="272.0" layoutY="327.0" onMousePressed="#selectSouthStall" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="westStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="122.0" layoutY="201.0" onMousePressed="#selectWestStall" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+            <ImageView fx:id="eastStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="425.0" layoutY="201.0" onMousePressed="#selectEastStall" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+            <ImageView fx:id="northwestKingsStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="128.0" layoutY="58.0" onMousePressed="#selectNorthwestKingsStall" pickOnBounds="true" preserveRatio="true" rotate="-45.0" />
+            <ImageView fx:id="northeastKingsStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="433.0" layoutY="58.0" onMousePressed="#selectNortheastKingsStall" pickOnBounds="true" preserveRatio="true" rotate="45.0" />
+            <ImageView fx:id="southwestKingsStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="137.0" layoutY="335.0" onMousePressed="#selectSouthwestKingsStall" pickOnBounds="true" preserveRatio="true" rotate="45.0" />
+            <ImageView fx:id="southeastKingsStallImageView" fitHeight="125.0" fitWidth="75.0" layoutX="417.0" layoutY="335.0" onMousePressed="#selectSoutheastKingsStall" pickOnBounds="true" preserveRatio="true" rotate="-45.0" />
+            <ImageView fx:id="deckImageView" fitHeight="125.0" fitWidth="75.0" layoutX="271.0" layoutY="191.0" pickOnBounds="true" />
+            <ImageView fx:id="eastStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="488.0" layoutY="201.0" onMousePressed="#selectEastStall" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+            <ImageView fx:id="northeastKingsStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="466.0" layoutY="25.0" onMousePressed="#selectNortheastKingsStall" pickOnBounds="true" preserveRatio="true" rotate="45.0" />
+            <ImageView fx:id="northStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="271.0" layoutY="10.0" onMousePressed="#selectNorthStall" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="northwestKingsStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="95.0" layoutY="25.0" onMousePressed="#selectNorthwestKingsStall" pickOnBounds="true" preserveRatio="true" rotate="-45.0" />
+            <ImageView fx:id="westStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="60.0" layoutY="201.0" onMousePressed="#selectWestStall" pickOnBounds="true" preserveRatio="true" rotate="90.0" />
+            <ImageView fx:id="southwestKingsStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="104.0" layoutY="368.0" onMousePressed="#selectSouthwestKingsStall" pickOnBounds="true" preserveRatio="true" rotate="45.0" />
+            <ImageView fx:id="southStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="272.0" layoutY="368.0" onMousePressed="#selectSouthStall" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="southeastKingsStallTopCardImageView" fitHeight="125.0" fitWidth="75.0" layoutX="450.0" layoutY="368.0" onMousePressed="#selectSoutheastKingsStall" pickOnBounds="true" preserveRatio="true" rotate="-45.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="526.0" prefHeight="156.0" prefWidth="838.0" style="-fx-border-color: BLACK;">
+         <children>
+            <ImageView fx:id="cardInHandImageView1" fitHeight="150.0" fitWidth="106.0" layoutX="8.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView2" fitHeight="150.0" fitWidth="106.0" layoutX="61.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView3" fitHeight="150.0" fitWidth="106.0" layoutX="114.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView4" fitHeight="150.0" fitWidth="106.0" layoutX="167.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView5" fitHeight="150.0" fitWidth="106.0" layoutX="220.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView6" fitHeight="150.0" fitWidth="106.0" layoutX="273.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView7" fitHeight="150.0" fitWidth="106.0" layoutX="326.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView8" fitHeight="150.0" fitWidth="106.0" layoutX="379.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView9" fitHeight="150.0" fitWidth="106.0" layoutX="432.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView10" fitHeight="150.0" fitWidth="106.0" layoutX="485.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView11" fitHeight="150.0" fitWidth="106.0" layoutX="538.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView12" fitHeight="150.0" fitWidth="106.0" layoutX="591.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView13" fitHeight="150.0" fitWidth="106.0" layoutX="644.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView14" fitHeight="150.0" fitWidth="106.0" layoutX="697.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cardInHandImageView15" fitHeight="150.0" fitWidth="106.0" layoutX="750.0" layoutY="4.0" onMousePressed="#selectedCardInHand" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="650.0" layoutY="8.0" prefHeight="512.0" prefWidth="284.0">
+         <children>
+            <Button fx:id="readyButton" layoutX="5.0" layoutY="302.0" mnemonicParsing="false" onAction="#readyButtonOnAction" prefHeight="30.0" prefWidth="198.0" text="Bereit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="readyLabel" alignment="CENTER" layoutX="13.0" layoutY="264.0" prefHeight="20.0" prefWidth="181.0" text="Nicht bereit" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="232.0" prefHeight="20.0" prefWidth="125.0" text="Spieler sind bereit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="howManyPlayersAreReadyLabel" alignment="CENTER" layoutX="1.0" layoutY="232.0" prefHeight="20.0" prefWidth="64.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Info:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoLabel" layoutX="1.0" layoutY="18.0" prefHeight="81.0" prefWidth="284.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="turnLabel69" layoutX="5.0" layoutY="197.0" prefHeight="18.0" prefWidth="198.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="endTurnButton" layoutX="4.0" layoutY="340.0" mnemonicParsing="false" onAction="#endTurnButtonOnAction" prefHeight="30.0" prefWidth="198.0" text="Zug beenden">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="chipsLabel" layoutX="5.0" layoutY="163.0" prefHeight="18.0" prefWidth="198.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreLabel" layoutX="4.0" layoutY="133.0" prefHeight="18.0" prefWidth="198.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameOfWinnerLabel" layoutX="4.0" layoutY="103.0" prefHeight="18.0" prefWidth="198.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="addEasyBotButton" layoutX="1.0" layoutY="486.0" mnemonicParsing="false" onAction="#addEasyBotButtonOnAction" prefHeight="26.0" prefWidth="198.0" text="Einfacher Bot hinzufügen">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="addMediumBotButton" layoutX="1.0" layoutY="453.0" mnemonicParsing="false" onAction="#addMediumBotButtonOnAction" prefHeight="26.0" prefWidth="198.0" text="Mittlerer Bot hinzufügen">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="removeBotButton" layoutX="3.0" layoutY="421.0" mnemonicParsing="false" onAction="#removeBotButtonOnAction" prefHeight="26.0" prefWidth="198.0" text="Bot entfernen">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="botsInGameRoomLabel" layoutX="1.0" layoutY="391.0" prefHeight="18.0" prefWidth="198.0" text="Bots im Raum:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="outLabel" layoutX="873.0" layoutY="589.0" prefHeight="88.0" prefWidth="329.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

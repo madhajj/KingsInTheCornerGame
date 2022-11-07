@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sep.kitc.controller.LoginController">
+<center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <children>
+            <Label fx:id="label" layoutX="194.0" layoutY="340.0" text="Keinen Konto noch?" />
+            <TextField fx:id="userNameTextField" layoutX="225.0" layoutY="136.0" promptText="Benutzername" />
+            <PasswordField fx:id="userPasswordField" layoutX="225.0" layoutY="187.0" promptText="Passwort" />
+            <Button fx:id="loginButton" layoutX="257.0" layoutY="257.0" mnemonicParsing="false" onAction="#loginButtonOnAction" text="Anmelden">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <Label fx:id="warningLabel" contentDisplay="RIGHT" layoutX="225.0" layoutY="105.0" prefHeight="17.0" prefWidth="226.0" textFill="#dd0909" />
+            <Hyperlink fx:id="registerHyperLink" layoutX="301.0" layoutY="337.0" onAction="#registerHyperLinkOnAction" text="Jetzt registrieren!" underline="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="exitGameButton" layoutX="243.0" layoutY="294.0" mnemonicParsing="false" onAction="#exitGameButtonOnAction" text="Spiel beenden">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+        </children>
+    </AnchorPane>
+</center>
+</BorderPane>

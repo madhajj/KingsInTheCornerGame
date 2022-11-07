@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sep.kitc.controller.LobbyController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: BLACK;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="275.0" text="Bestenliste:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <VBox fx:id="leaderBoardVBox" layoutX="14.0" layoutY="34.0" prefHeight="356.0" prefWidth="275.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: BLACK;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="gameRoomManagementButton" layoutX="16.0" layoutY="137.0" mnemonicParsing="false" onAction="#gameRoomManagementButtonOnAction" prefHeight="25.0" prefWidth="268.0" text="Spielraumverwaltung">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="accountManagementButton" layoutX="16.0" layoutY="185.0" mnemonicParsing="false" onAction="#accountManagementButtonOnAction" prefHeight="25.0" prefWidth="268.0" text="Kontoverwaltung">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" layoutX="16.0" layoutY="236.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="25.0" prefWidth="268.0" text="Abmelden">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

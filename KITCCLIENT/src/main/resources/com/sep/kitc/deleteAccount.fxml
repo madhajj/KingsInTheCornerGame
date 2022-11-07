@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sep.kitc.controller.DeleteAccountController">
+   <children>
+      <TextField fx:id="userNameTextField" layoutX="226.0" layoutY="100.0" promptText="Benutzername" />
+      <PasswordField fx:id="userPasswordField" layoutX="226.0" layoutY="158.0" promptText="Passwort" />
+      <Button fx:id="deleteAccountButton" layoutX="240.0" layoutY="225.0" mnemonicParsing="false" onAction="#deleteAccountButtonOnAction" prefHeight="39.0" prefWidth="121.0" text="Konto löschen">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="240.0" layoutY="283.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="39.0" prefWidth="121.0" text="Zurück">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="deleteWarnungLabel" layoutX="134.0" layoutY="66.0" prefHeight="19.0" prefWidth="338.0" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,3 @@
+grant codeBase "file:/C:/Users/frkat/Desktop/INSY/KITCSRV/out/production/KITCSRV/" {
+    permission java.security.AllPermission;
+};

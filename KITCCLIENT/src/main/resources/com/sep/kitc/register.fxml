@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sep.kitc.controller.RegisterController">
+<top>
+    <AnchorPane prefHeight="487.0" prefWidth="672.0" BorderPane.alignment="CENTER">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <children>
+            <PasswordField fx:id="userPasswordField" layoutX="95.0" layoutY="161.0" prefHeight="39.0" prefWidth="265.0" promptText="Passwort">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </PasswordField>
+            <Label fx:id="warningLabel" layoutX="96.0" layoutY="59.0" prefHeight="22.0" prefWidth="536.0" textFill="#f20b0b">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Label>
+            <TextField fx:id="userNameTextField" layoutX="93.0" layoutY="101.0" prefHeight="39.0" prefWidth="266.0" promptText="Benutzername">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </TextField>
+            <PasswordField fx:id="userPasswordFieldRepeat" accessibleRoleDescription="n und kz ds" layoutX="95.0" layoutY="221.0" prefHeight="39.0" prefWidth="265.0" promptText="Passwort wiederholen">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </PasswordField>
+            <CheckBox fx:id="agbCheckBox" layoutX="99.0" layoutY="286.0" mnemonicParsing="false" />
+            <Button fx:id="registerButton" layoutX="93.0" layoutY="338.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="36.0" prefWidth="130.0" text="Registrieren">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Hyperlink fx:id="agbHyperLink" layoutX="121.0" layoutY="284.0" onAction="#agbHyperLinkOnAction" text="Hiermit bestätige ich die AGB zur Kenntnis genommen zu haben und akzeptiere diese." />
+            <Button fx:id="backButton" layoutX="226.0" layoutY="338.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="36.0" prefWidth="130.0" text="Zurück">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+        </children>
+    </AnchorPane>
+</top>
+</BorderPane>

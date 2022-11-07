@@ -1,0 +1,14 @@
+-Führen Sie zuerst die Application.java Datei von dem Client-Ordner aus. Dann führen Sie die Application.java Datei des Server-Ordners aus. 
+-Jetzt müssen Sie die Benutzeroberfäche des Programms sehen. Um das Spiel zu spielen müssen Sie zuerst ein Konto herstellen. 
+-Um das zu machen drücken sie Auf dem Jetzt registriren Knopf, die sie auf der Anmeldeseite sehen.  
+-Geben Sie den gewünschten Name und das gewünschte Passwort ein und drücken Sie auf Registrieren. 
+-Jetzt können Sie zu dem Lobby gehen. 
+-Da werden Spielräume erzeugt, um mit anderen Spielern oder mit Bots zu spielen. Auch von dem Lobby haben Sie Zugriff zu der Kontoverwalrung, 
+-wo Sie relevante Informationen über Ihr Konto finden können. Um ein Spielraum zu erzeugen drücken Sie auf Spielraumverwaltung.
+-Jetzt können Sie den Name, das Passwort, und die maximale Anzahl der Spieler in die relevante Felde eingeben, um ein Spielraum zu erzeugen.
+-Um den neu erzeugte Spielraum beizutreten, geben Sie den Name und das Passwort des Spielraums in die relevate Felde.
+-Jetzt befinde sie sich in dem Spielraum. Sie können hier auf andere Spieler warten, Bots erstellen.
+-Um Bots zu erstellen gibt es zwei Möglichkeiten. Sie können mit einfachen Bots oder mit mittleren Bots spielen.
+-Die Bots können auch natürlich entfernt werden.
+-Wenn sie bereit zu spielen sind drücken Sie auf bereit.
+-Wenn alle Spieler bereit sind, beginnt das Spiel.
